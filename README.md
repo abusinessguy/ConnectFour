@@ -48,4 +48,5 @@ Uses recursive minimax search to evaluate future board positions and choose a st
 Install dependencies:
 
 ```bash
-pip install numpy
+pip install -r requirements.txt
+python connect_four.py
