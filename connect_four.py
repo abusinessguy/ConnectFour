@@ -125,7 +125,7 @@ def Offense(Grid, Player):
 def RandomAIwithDefense(Grid, Player):
     # Strategy using only defense
     choice = Defense(Grid, Player)
-    if choice:
+    if choice is not None:
         return choice
     else:
         return RandomAI(Grid, Player)
@@ -136,8 +136,8 @@ def RandomAIOffenseDefense(Grid, Player):
     if choice:
         return choice
     choice = Defense(Grid, Player)
-    if choice:
-        return choice    
+    if choice is not None:
+        return choice   
     else:
         return RandomAI(Grid, Player)
     
